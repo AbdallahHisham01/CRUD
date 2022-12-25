@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="m-auto text-center p-5 text-muted w-25">Bookmark</h1>
+    <section class="submit-form container rounded mb-5 shadow section-bg">
+        <h2 class="text-center mb-5 p-3">Bookmark your favorite sites</h2>
+
+        <div class="form-group mb-2 text-center">
+            <label for="bookName" class="mb-3 text-center">Book Name</label>
+            <input type="text" id="bookName" class="form-control mx-auto mb-3 w-75" placeholder="Enter book Name">
+            <p id="validName" class="border border-2 rounded border-danger required-paragraph-bg mx-auto mb-3 d-none w-75">Book name can't be empty or begin a space and must be three letters at least</p>
+        </div>
+        <div class="form-group mb-2 text-center p-3">
+            <label for="bookUrl" class="mb-3 text-center">Site URL</label>
+            <input type="text" id="bookUrl" class="form-control mx-auto mb-3 w-75" placeholder="Enter website URL">
+            <p id="validUrl" class="border border-2 rounded border-danger required-paragraph-bg mx-auto mb-3 d-none w-75">URL must begin with "http://" or "https://"</p>
+        </div>
+        <div class="text-center">
+            <button onclick="addBook()" id="submitBtn" class="btn btn-primary submit-btn my-5">Add Book</button>
+        </div>
+    </section>
+
+    <section class="container mb-5 rounded" id="displaySection" >
+
+    </section>
+
+    <div class="text-center mb-5">
+        <button onclick="clearAll()" class="bg-danger w-25 text-light border rounded px-3 py-1">Clear all</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

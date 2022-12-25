@@ -1,0 +1,20 @@
+.section-bg {
+    background-color: #eee;
+}
+
+.required-paragraph-bg {
+    background-color: #ffb2b2
+}
+
+.links {
+    color: white;
+    text-decoration: none;
+}
+
+.links:hover {
+    color: white;
+}
+
+.empty-list {
+    color: #727272;
+}
